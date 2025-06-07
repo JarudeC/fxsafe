@@ -1,4 +1,4 @@
-# LugoTrip
+# FXSAFE
 
 A Next.js application with Supabase backend and Vercel deployment.
 
