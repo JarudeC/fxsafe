@@ -1,12 +1,20 @@
+"use client";
+
 import Navbar from "../component/Navbar";
 import DestinationCarousel from "../component/DestinationCarousel";
 import HeroCarousel from "../component/HeroCarousel";
+import DashboardStats from "../component/DashboardStats";
+import { useAuth } from '../context/AuthContext';
 
 export default function Home() {
+  const { isAuthenticated } = useAuth();
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0F0C29] via-[#302B63] to-[#24243E] text-white">
       <Navbar />
       <HeroCarousel />
+      
+      {isAuthenticated && <DashboardStats />}
 
       {/* What is FXSafe Section */}
       <section className="max-w-7xl mx-auto px-4 py-16 text-center">
@@ -61,12 +69,12 @@ export default function Home() {
           </div>
           <div className="bg-white/10 hover:bg-white/20 transition rounded-xl shadow-lg p-6 backdrop-blur-sm">
             <div className="text-lg font-semibold mb-2">"No hidden charges"</div>
-            <div className="text-white/80 mb-4">Used FXSafe to pay my helper’s tuition directly. 100% transparent and easy to use.</div>
+            <div className="text-white/80 mb-4">Used FXSafe to pay my helper's tuition directly. 100% transparent and easy to use.</div>
             <div className="text-white/60 text-sm">- Jianwei, Singapore</div>
           </div>
           <div className="bg-white/10 hover:bg-white/20 transition rounded-xl shadow-lg p-6 backdrop-blur-sm">
             <div className="text-lg font-semibold mb-2">"Just works"</div>
-            <div className="text-white/80 mb-4">Feels like using PayNow, but for overseas. And I didn’t lose 8% to banks or agencies.</div>
+            <div className="text-white/80 mb-4">Feels like using PayNow, but for overseas. And I didn't lose 8% to banks or agencies.</div>
             <div className="text-white/60 text-sm">- Aditya, Malaysia</div>
           </div>
         </div>
