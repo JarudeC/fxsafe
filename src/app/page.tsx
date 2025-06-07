@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0F0C29] via-[#302B63] to-[#24243E] text-white">
       <Navbar />
+      
       <HeroCarousel />
 
       {/* What is FXSafe Section */}
