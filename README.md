@@ -1,5 +1,11 @@
 # FXSAFE
 
+How to use:
+1. Install node.js
+2. cd to root folder
+3. npm install
+4. npm run dev
+
 A Next.js application with Supabase backend and Vercel deployment.
 
 ## Getting Started
