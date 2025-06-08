@@ -1,16 +1,44 @@
+"use client";
+
 import Navbar from "../component/Navbar";
 import DestinationCarousel from "../component/DestinationCarousel";
 import HeroCarousel from "../component/HeroCarousel";
+import DashboardStats from "../component/DashboardStats";
+import { useAuth } from '../context/AuthContext';
+import { useSearchParams } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import Notification from '../component/Notification';
 
 export default function Home() {
+  const { isAuthenticated } = useAuth();
+  const searchParams = useSearchParams();
+  const [showNotification, setShowNotification] = useState(false);
+
+  useEffect(() => {
+    if (searchParams.get('login') === 'success') {
+      setShowNotification(true);
+      // Remove the login parameter from the URL without refreshing the page
+      window.history.replaceState({}, '', '/');
+    }
+  }, [searchParams]);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0F0C29] via-[#302B63] to-[#24243E] text-white">
-      <Navbar />
+      {showNotification && (
+        <Notification
+          message="Successfully logged in!"
+          type="success"
+          onClose={() => setShowNotification(false)}
+        />
+      )}
       
+      <Navbar />
       <HeroCarousel />
+      
+      {isAuthenticated && <DashboardStats />}
 
       {/* What is FXSafe Section */}
-      <section className="max-w-7xl mx-auto px-4 py-16 text-center">
+      <section id="send-money" className="max-w-7xl mx-auto px-4 py-16 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">Send Money, Not Fees</h2>
         <p className="text-lg text-white/80 max-w-3xl mx-auto">
           FXSafe lets you send RLUSD to family or friends abroad—converted instantly to local currency through XRPL's built-in AMM. No banks, no delays, no hidden fees.
@@ -18,7 +46,7 @@ export default function Home() {
       </section>
 
       {/* Destination Carousel Section */}
-      <section className="max-w-7xl mx-auto px-4 py-16">
+      <section id="destinations" className="max-w-7xl mx-auto px-4 py-16">
         <h2 className="text-4xl md:text-5xl font-bold mb-10 text-left text-white">Send Money To These Countries</h2>
         <DestinationCarousel
           destinations={[
@@ -52,7 +80,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="max-w-7xl mx-auto px-4 py-16">
+      <section id="testimonials" className="max-w-7xl mx-auto px-4 py-16">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-left text-white">What Our Early Users Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white/10 hover:bg-white/20 transition rounded-xl shadow-lg p-6 backdrop-blur-sm">
@@ -62,19 +90,19 @@ export default function Home() {
           </div>
           <div className="bg-white/10 hover:bg-white/20 transition rounded-xl shadow-lg p-6 backdrop-blur-sm">
             <div className="text-lg font-semibold mb-2">"No hidden charges"</div>
-            <div className="text-white/80 mb-4">Used FXSafe to pay my helper’s tuition directly. 100% transparent and easy to use.</div>
+            <div className="text-white/80 mb-4">Used FXSafe to pay my helper's tuition directly. 100% transparent and easy to use.</div>
             <div className="text-white/60 text-sm">- Jianwei, Singapore</div>
           </div>
           <div className="bg-white/10 hover:bg-white/20 transition rounded-xl shadow-lg p-6 backdrop-blur-sm">
             <div className="text-lg font-semibold mb-2">"Just works"</div>
-            <div className="text-white/80 mb-4">Feels like using PayNow, but for overseas. And I didn’t lose 8% to banks or agencies.</div>
+            <div className="text-white/80 mb-4">Feels like using PayNow, but for overseas. And I didn't lose 8% to banks or agencies.</div>
             <div className="text-white/60 text-sm">- Aditya, Malaysia</div>
           </div>
         </div>
       </section>
 
       {/* Call to Action Section */}
-      <section className="max-w-7xl mx-auto px-4 py-16 flex flex-col items-center">
+      <section id="cta" className="max-w-7xl mx-auto px-4 py-16 flex flex-col items-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-white">Start Sending with FXSafe</h2>
         <p className="text-lg text-white/80 mb-8 text-center max-w-2xl">
           Get started with just your XRPL wallet. Try it on the testnet to see how fast and affordable cross-border payments can be.
