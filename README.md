@@ -1,8 +1,6 @@
 ## 💸 FXSafe: Smart Stablecoin Remittance Wallet Using RLUSD
 FXSafe is a blockchain-based remittance wallet designed for migrant workers to send RLUSD (on-ledger stablecoin) to family back home, with automatic FX conversion into local IOUs (e.g., PHP, MYR, IDR) using XRPL's AMM and Path Payment features.
 
-## ✅ Demo: Send 50 RLUSD → AMM swap → Receive 2,000 MYR IOU
-
 ## 🚀 Features
 Feature	Purpose
 RLUSD	Stablecoin to avoid volatility
@@ -13,6 +11,7 @@ XLS-20 NFT (Optional)	Digital proof of remittance
 Multilingual UI + QR	Easy access for low-literacy users
 
 ## 🖥️ Live Demo and Screenshots
+insert video ...
 ![image](https://github.com/user-attachments/assets/0d92c115-c10c-4ce0-bf63-f0ad82bc0030)
 ![image](https://github.com/user-attachments/assets/ad136bc8-1d58-4ba7-b4fd-6454df793da8)
 ![image](https://github.com/user-attachments/assets/9ee5b48d-0a92-4ec7-8f49-4a3cf7a6e5d3)
