@@ -13,10 +13,7 @@ Multilingual UI + QR	Easy access for low-literacy users
 
 
 ## 🖥️ Live Demo and Screenshots
-
-
-https://github.com/user-attachments/assets/ff1bf788-d833-4051-bf3d-632650e0fe97
-
+https://github.com/user-attachments/assets/a7afb858-4ee5-451b-a6d6-9bde10728ff8
 
 ![image](https://github.com/user-attachments/assets/0d92c115-c10c-4ce0-bf63-f0ad82bc0030)
 ![image](https://github.com/user-attachments/assets/ad136bc8-1d58-4ba7-b4fd-6454df793da8)
