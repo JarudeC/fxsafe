@@ -45,10 +45,9 @@ Deployment	Vercel (frontend), Render (backend)	Easy, free deployment
 1. Visit Site: User lands on FXSafe web app
 
 2. Connect Wallet:
+    a. If new: generate XRPL wallet + store encrypted seed
 
-If new: generate XRPL wallet + store encrypted seed
-
-If existing: connect via XUMM
+    b. If existing: connect via XUMM
 
 3. Create Session: User profile + login session created
 
