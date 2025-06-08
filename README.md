@@ -1,6 +1,7 @@
 ## 💸 FXSafe: Smart Stablecoin Remittance Wallet Using RLUSD
 FXSafe is a blockchain-based remittance wallet designed for migrant workers to send RLUSD (on-ledger stablecoin) to family back home, with automatic FX conversion into local IOUs (e.g., PHP, MYR, IDR) using XRPL's AMM and Path Payment features.
 
+
 ## 🚀 Features
 Feature	Purpose
 RLUSD	Stablecoin to avoid volatility
@@ -9,6 +10,7 @@ IOU Tokens (e.g., MYR, PHP)	Recipient receives local currency IOUs
 Escrow (Optional)	Lock funds until recipient confirms
 XLS-20 NFT (Optional)	Digital proof of remittance
 Multilingual UI + QR	Easy access for low-literacy users
+
 
 ## 🖥️ Live Demo and Screenshots
 insert video ...
@@ -19,6 +21,7 @@ insert video ...
 ![image](https://github.com/user-attachments/assets/f5895822-8147-487d-b516-20636266f4f8)
 ![image](https://github.com/user-attachments/assets/c2ef5d35-ff97-45e6-917f-62235428a979)
 
+
 ## 🔐 Key Security Features
 Escrow/Hooks Support: Optionally lock funds until the recipient acknowledges receipt.
 
@@ -28,6 +31,7 @@ AMM Path Payments: Fair FX rates and deep liquidity.
 
 Wallet Connect via XUMM: Safe signing through trusted interfaces.
 
+
 ## 🛠️ Tech Stack
 Layer	Tool	Purpose
 Frontend	React + Vite + TailwindCSS	Fast UI development
@@ -35,6 +39,7 @@ Wallet	xumm-web-sdk	QR sign-in and TX signing
 XRPL Integration	xrpl.js	Handle AMM & payments
 Backend (optional)	Node.js + Express	Quote generation & receipts
 Deployment	Vercel (frontend), Render (backend)	Easy, free deployment
+
 
 ## 🧩 System Flow
 1. Visit Site: User lands on FXSafe web app
@@ -59,12 +64,14 @@ If existing: connect via XUMM
 
 9. Optional Receipt: Mint NFT as remittance proof
     
+
 ## 🧠 Future Plans
 Offline Support: Local agent kiosks to assist users without smartphones
 
 Multilingual Interface: For wider accessibility
 
 Local Bank Partnerships: Enable IOU cash-out in rural regions
+
 
 ## 🧾 Summary
 FXSafe gives migrant workers a better way to send money:
@@ -74,15 +81,17 @@ FXSafe gives migrant workers a better way to send money:
 ✅ Safer: Escrow and receipt proof protect against fraud
 ✅ Flexible: Direct IOUs in local currencies
 
+
 ## 🌍 We bridge the speed and transparency of crypto with the real-world utility of local payouts.
+
 
 ## 📚 Learn More
 🔗 ...
 
 🔧 ....
 
-📱 XUMM SDK
-🧑‍💻 Authors
+
+## 🧑‍💻 Authors
 Jared, Wei Xiang, Akash, Flash & Wen Bao
 → Built at XRPL Developer Hackathon
 
