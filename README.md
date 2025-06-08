@@ -1,4 +1,6 @@
-# FXSAFE
+# FXSAFE: Smart Stablecoin Remittance Wallet Using RLUSD
+
+A wallet for migrant workers to send RLUSD to family, with automatic FX conversion via XRPL AMM into local IOUs like PHP, IDR, or MYR.
 
 How to use:
 
@@ -9,6 +11,7 @@ How to use:
 5. npm run dev
 
 A Next.js application with Supabase backend and Vercel deployment.
+![image](https://github.com/user-attachments/assets/0d92c115-c10c-4ce0-bf63-f0ad82bc0030)
 
 ## Getting Started
 
