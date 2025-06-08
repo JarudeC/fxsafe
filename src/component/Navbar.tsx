@@ -27,8 +27,17 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <Link href="/" className="text-white text-xl font-bold">
-              FXSafe
+            <Link href="/" className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center shadow-md">
+                <Image
+                  src="/fxsafe_logo.png"
+                  alt="FXSafe Logo"
+                  width={40}
+                  height={40}
+                  className="rounded-full"
+                />
+              </div>
+              <span className="text-white text-xl font-bold">FXSafe</span>
             </Link>
           </div>
           
