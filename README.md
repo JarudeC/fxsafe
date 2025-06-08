@@ -22,6 +22,23 @@ insert video ...
 ![image](https://github.com/user-attachments/assets/c2ef5d35-ff97-45e6-917f-62235428a979)
 
 
+## How to use:
+1) Install node.js
+2) cd to root folder
+3) npm install
+4) npm install chart.js react-chartjs-2
+5) npm run dev
+
+
+## Getting Started
+1) Clone the repository
+2) Install dependencies:
+3) npm install
+4) Run the development server:
+5) npm run dev
+6) Open http://localhost:3000 in your browser
+
+
 ## 🔐 Key Security Features
 Escrow/Hooks Support: Optionally lock funds until the recipient acknowledges receipt.
 
