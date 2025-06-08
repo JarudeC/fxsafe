@@ -45,23 +45,24 @@ Deployment	Vercel (frontend), Render (backend)	Easy, free deployment
 1. Visit Site: User lands on FXSafe web app
 
 2. Connect Wallet:
+   
     a. If new: generate XRPL wallet + store encrypted seed
 
     b. If existing: connect via XUMM
 
-3. Create Session: User profile + login session created
+4. Create Session: User profile + login session created
 
-4. Dashboard: Show wallet balance and transaction history
+5. Dashboard: Show wallet balance and transaction history
 
-5. Initiate Transfer: User enters amount & selects currency
+6. Initiate Transfer: User enters amount & selects currency
 
-6. Quote FX Rate: Find path + display swap rate
+7. Quote FX Rate: Find path + display swap rate
 
-7. Confirm & Sign: User signs transaction via XUMM
+8. Confirm & Sign: User signs transaction via XUMM
 
-8. Swap & Send: RLUSD converted + IOU sent to family
+9. Swap & Send: RLUSD converted + IOU sent to family
 
-9. Optional Receipt: Mint NFT as remittance proof
+10. Optional Receipt: Mint NFT as remittance proof
     
 
 ## 🧠 Future Plans
